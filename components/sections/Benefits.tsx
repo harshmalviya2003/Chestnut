@@ -25,7 +25,7 @@ const stats = [
 
 export function Benefits() {
   return (
-    <section className="py-20 px-4 bg-white/90 backdrop-blur-md" id="about">
+    <section className="py-20 px-4 bg-white" id="about">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-20">
           <motion.h2 

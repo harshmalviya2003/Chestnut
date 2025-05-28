@@ -36,7 +36,7 @@ export function FAQ() {
 
   return (
     <section
-      className="py-24 px-4 bg-gradient-to-b from-white to-gray-50"
+      className="py-24 px-4 bg-white"
       id="faq"
     >
       <div className="container mx-auto max-w-7xl">

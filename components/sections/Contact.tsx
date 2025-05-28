@@ -9,7 +9,7 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 export function Contact() {
   return (
-    <section className="py-20 px-4 bg-white/90 backdrop-blur-md" id="contact">
+    <section className="py-20 px-4 bg-white" id="contact">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
