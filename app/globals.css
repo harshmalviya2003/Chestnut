@@ -2,3 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: 230 100% 44%;  /* #0022DF */
+  --primary-foreground: 0 0% 100%;  /* white */
+  
+  --secondary: 0 0% 0%;  /* black */
+  --secondary-foreground: 0 0% 100%;  /* white */
+  
+  --muted: 0 0% 100%;  /* white */
+  --muted-foreground: 0 0% 0%;  /* black */
+  
+  --accent: 230 100% 44%;  /* #0022DF */
+  --accent-foreground: 0 0% 100%;  /* white */
+  
+  --background: 0 0% 100%;  /* white */
+  --foreground: 0 0% 0%;  /* black */
+  
+  --card: 0 0% 100%;  /* white */
+  --card-foreground: 0 0% 0%;  /* black */
+  
+  --popover: 0 0% 100%;  /* white */
+  --popover-foreground: 0 0% 0%;  /* black */
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 100%;  /* white */
+  
+  --border: 230 100% 44%;  /* #0022DF */
+  --input: 230 100% 44%;  /* #0022DF */
+  --ring: 230 100% 44%;  /* #0022DF */
+  
+  --radius: 0.5rem;
+}
+
+.dark {
+  --primary: 230 100% 44%;  /* #0022DF */
+  --primary-foreground: 0 0% 100%;  /* white */
+  
+  --secondary: 0 0% 100%;  /* white */
+  --secondary-foreground: 0 0% 0%;  /* black */
+  
+  --muted: 0 0% 0%;  /* black */
+  --muted-foreground: 0 0% 100%;  /* white */
+  
+  --accent: 230 100% 44%;  /* #0022DF */
+  --accent-foreground: 0 0% 100%;  /* white */
+  
+  --background: 0 0% 0%;  /* black */
+  --foreground: 0 0% 100%;  /* white */
+  
+  --card: 0 0% 0%;  /* black */
+  --card-foreground: 0 0% 100%;  /* white */
+  
+  --popover: 0 0% 0%;  /* black */
+  --popover-foreground: 0 0% 100%;  /* white */
+  
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 100%;  /* white */
+  
+  --border: 230 100% 44%;  /* #0022DF */
+  --input: 230 100% 44%;  /* #0022DF */
+  --ring: 230 100% 44%;  /* #0022DF */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  p {
+    @apply leading-7;
+  }
+}
+
+@layer utilities {
+  .hero-pattern {
+    @apply relative bg-background;
+    background-image: 
+      radial-gradient(at 40% 20%, hsla(230,100%,44%,0.15) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsla(0,0%,0%,0.1) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(230,100%,44%,0.15) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, hsla(0,0%,0%,0.1) 0px, transparent 50%);
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
