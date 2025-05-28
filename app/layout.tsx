@@ -7,8 +7,8 @@ import { MouseTrailer } from "@/components/mouse-trailer"
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'RoboAI - Next Generation Robotics & AI Solutions',
-  description: 'Pioneering the future of robotics and artificial intelligence',
+  title: 'Demo Chestnut',
+  description: '',
 };
 
 export default function RootLayout({
