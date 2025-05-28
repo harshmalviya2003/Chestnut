@@ -64,10 +64,7 @@ export function Footer() {
           >
             <div className="flex items-center space-x-4">
               <div className="w-10 h-10 flex items-center justify-center">
-                <svg width="40" height="40" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="10" cy="10" r="10" fill="#0022DF"/>
-                  <path d="M10 0 C 15 5, 15 15, 10 20 C 5 15, 5 5, 10 0 Z" fill="white"/>
-                </svg>
+                <Building2 className="w-8 h-8 text-primary" />
               </div>
               <span className="text-3xl font-extrabold text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
                 Chestnut Mortgage
@@ -83,9 +80,9 @@ export function Footer() {
             >
               <a
                 href="#"
-                className="inline-flex items-center px-6 py-3 text-base font-semibold text-white bg-primary rounded-full hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl"
+                className="inline-flex bg-black items-center px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-primary to-purple-600 rounded-full hover:from-primary/90 hover:to-purple-600/90 transition-all shadow-lg hover:shadow-xl"
               >
-                Start Your Journey →
+                Get Started →
               </a>
             </motion.div>
           </motion.div>
@@ -138,9 +135,9 @@ export function Footer() {
                 />
                 <button
                   onClick={handleNewsletterSubmit}
-                  className="px-4 py-2 bg-primary text-white rounded-r-full hover:bg-primary/90 transition-colors"
+                  className="px-4 py-2 bg-primary text-white  rounded-r-full hover:bg-primary/90 transition-colors"
                 >
-                  <Mail className="h-5 w-5" />
+                  <Mail className="h-5 w-5 text-black" />
                 </button>
               </div>
             </div>
