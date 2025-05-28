@@ -7,18 +7,18 @@ import { TypeAnimation } from 'react-type-animation'
 
 export function Hero() {
   return (
-    <section className="relative pt-12 md:pt-20 pb-16 md:pb-28 px-4 overflow-hidden bg-white/90 backdrop-blur-md" id="home">
+    <section className="relative pt-12 md:pt-20 pb-16 md:pb-28 px-4 overflow-hidden bg-white" id="home">
       {/* Animated background elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <motion.div 
           animate={{ x: [0, 100, 0], y: [0, 50, 0] }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute top-20 left-10 w-32 h-32 rounded-full bg-[#0022DF]/10 blur-3xl"
+          className="absolute top-20 left-10 w-32 h-32 rounded-full bg-[#0022DF]/5 blur-3xl"
         />
         <motion.div 
           animate={{ x: [0, -50, 0], y: [0, -30, 0] }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-10 right-20 w-40 h-40 rounded-full bg-[#0022DF]/10 blur-3xl"
+          className="absolute bottom-10 right-20 w-40 h-40 rounded-full bg-[#0022DF]/5 blur-3xl"
         />
       </div>
       
